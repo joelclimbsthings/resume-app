@@ -1,26 +1,34 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+window.resizeIframe = obj => {
+   console.log('running');
+   obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+};
 
-export default App;
+export default class App extends React.Component {
+   resizeIframe = obj => {
+      console.log('running');
+      obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+   };
+
+   render() {
+      return (
+         <div className="App">
+            <header className="app-header">
+               <button>Markdown</button>
+               <button>HTML</button>
+               <button>PDF</button>
+            </header>
+
+            <iframe
+               title="HTML Resume"
+               frameBorder="0"
+               className="html-resume-view"
+               src="https://joelt-assets.firebaseapp.com/resume.html"
+               onLoad={event => this.resizeIframe(event.target)}
+            ></iframe>
+         </div>
+      );
+   }
+}
