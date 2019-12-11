@@ -47,7 +47,7 @@ export default class App extends React.Component {
 
       return (
          <div className="App">
-            <header className="app-header">
+            <nav className="app-nav">
                <ButtonGroup size="sm" className="actions">
                   <Button
                      outline={view === 'markdown' ? false : true}
@@ -65,7 +65,7 @@ export default class App extends React.Component {
                      PDF
                   </Button>
                </ButtonGroup>
-            </header>
+            </nav>
             {content}
          </div>
       );
