@@ -7,8 +7,13 @@
   margin: 0 auto;
 }
 
-.html-resume-view {
-  display: block;
-  border: 0;
-  width: 960px;
+.markdown-content {
+  padding-top: 20px;
+  overflow: hidden;
+}
+
+@media print {
+  .app-header {
+    display: none;
+  }
 }

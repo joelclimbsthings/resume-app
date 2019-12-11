@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css?family=Signika:bold|Nunito%3A400%2C700|Muli:900&amp;ver=1.0.0");
+
+.html-content {
+  padding: 10px 10px 10px 10px;
+
+  h1,
+  h2 {
+    font-family: "Muli", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  section {
+    clear: both;
+    overflow: hidden;
+  }
+
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1.5em 0;
+    padding: 0;
+  }
+
+  /* Education */
+  #education > p {
+    font-size: 0.9em;
+  }
+  #education > h2:first-child {
+    margin-top: 1em;
+  }
+
+  /* Work Experience */
+  #work-experience ul li:last-child {
+    margin-left: 0;
+  }
+
+  /* Title of the resume */
+  h1 {
+    font-size: 45px;
+    color: #397249;
+    text-align: center;
+    margin-bottom: 35px;
+  }
+
+  /* h1:hover {
+background-color: #757575; color: #ffffff; text-shadow: 1px 1px 1px #333; } */
+
+  #work-experience ul + p {
+    font-size: 0.95em;
+    margin-bottom: 3px;
+  }
+
+  /* Paragraphs */
+  .level2 > ul > li > p,
+  #projects dl {
+    font-size: 0.9em;
+    margin-bottom: 3px;
+  }
+  #projects dt {
+    text-align: center;
+  }
+  #work-experience > blockquote {
+    font-size: 0.9em;
+  }
+  #projects > p {
+    font-size: 0.85em;
+  }
+
+  /* Titles of categories */
+
+  h2 {
+    /* This is called "sectioncolor" in the ConTeXt stylesheet. */
+    color: #397249;
+  }
+
+  /* There is a bar just before each category */
+  h2:before {
+    content: "";
+    display: inline-block;
+    margin-right: 1%;
+    width: 16%;
+    height: 10px;
+    /* This is called "rulecolor" in the ConTeXt stylesheet. */
+    background-color: #9cb770;
+  }
+
+  /*
+h2:hover { background-color: #397249; color: #ffffff; text-shadow: 1px 1px 1px
+#333; } */
+
+  /* Definitions */
+  dt {
+    float: left;
+    clear: left;
+    width: 15%;
+    /*font-weight: bold;*/
+  }
+  dd {
+    margin-left: 17%;
+  }
+  p {
+    margin-top: 0;
+    margin-bottom: 7px;
+  }
+
+  /* Blockquotes */
+  blockquote {
+    text-align: center;
+  }
+
+  /*Links */
+  a {
+    text-decoration: none;
+    color: #397249;
+  }
+  a:hover,
+  a:active {
+    background-color: #397249;
+    color: #ffffff;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #333;
+  }
+
+  /* Horizontal separators */
+  hr {
+    color: #a6a6a6;
+  }
+  table {
+    width: 100%;
+  }
+
+  /* Print styles */
+  @media print {
+    margin: 10px 25px 10px;
+
+    h2 {
+      margin: 4px auto 5px;
+    }
+
+    ul {
+      margin: 3px 0 3px;
+    }
+
+    dl {
+      margin: 8px 0 3px;
+    }
+
+    .level2 > ul > li > p {
+      margin: 0;
+    }
+
+    #education > h2:first-child {
+      margin-top: inherit;
+    }
+
+    #education > p {
+      margin-bottom: 3px;
+    }
+
+    #joel-thiessen > h1 {
+      margin: 0 auto 0;
+      font-size: 2em;
+    }
+
+    #joel-thiessen > p {
+      font-size: 0.9em;
+      margin-bottom: 3px;
+    }
+
+    #work-experience > blockquote {
+      margin: 5px auto 5px;
+    }
+
+    hr {
+      margin: 1em 0;
+    }
+  }
+}

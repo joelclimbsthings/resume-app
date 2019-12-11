@@ -19,7 +19,7 @@ Portland, OR, USA                             [https://joelt.me](https://joelt.m
 
 2017 - 2019
 
-: **PostPerk** - _Cofounder_
+: **PostPerk** - _Technical Cofounder_
 
 - Fully designed/developed product, dashboard, testing & all related tooling for full automation of partnership product for small-medium sized eCommerce companies.
 
@@ -45,7 +45,7 @@ Portland, OR, USA                             [https://joelt.me](https://joelt.m
 
 - Utilized Elastic Search stack with Kibana to create on-demand dashboarding reflecting data gathered via pipeline.
 
-**Leveraged Technologies:** Node.js, JS, AWS Lambda, Git, API Gateway, React, Jenkins, Docker, Elastic Search
+**Leveraged Technologies:** Node.js, JS, AWS Lambda, Git, API Gateway, React, Jenkins, Docker, Elastic
 
 2012 - 2014
 

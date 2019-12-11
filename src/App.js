@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import './resume.scss';
 
 export default class App extends React.Component {
    state = {
@@ -50,9 +51,7 @@ export default class App extends React.Component {
             <header className="app-header">
                <button onClick={() => this.setState({ view: 'markdown' })}>Markdown</button>
                <button onClick={() => this.setState({ view: 'html' })}>HTML</button>
-               <button onClick={() => window.open('https://assets.joelt.me/resume.pdf')}>
-                  PDF
-               </button>
+               <button onClick={() => window.open('resume.pdf')}>PDF</button>
             </header>
             {content}
          </div>
