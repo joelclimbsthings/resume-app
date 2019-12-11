@@ -1,10 +1,14 @@
-.App {
+.app-header {
   text-align: center;
 }
 
-.html-resume-view {
-  border: 0;
-  overflow-y: none;
+.App {
   width: 960px;
-  height: 100%;
+  margin: 0 auto;
+}
+
+.html-resume-view {
+  display: block;
+  border: 0;
+  width: 960px;
 }

@@ -1,6 +1,7 @@
 {
   "hosting": {
-    "public": "public",
+    "public": "build",
+    "site": "joelt-me",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "headers": [
       {

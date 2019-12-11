@@ -10,12 +10,20 @@
     "react-dom": "^16.12.0",
     "react-scripts": "3.3.0"
   },
+  "watch": {
+    "make": [
+      "resume-src/resume.md",
+      "resume-src/styles.css"
+    ]
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "yarn build && firebase deploy"
+    "deploy": "yarn build && firebase deploy",
+    "watch": "npm-watch",
+    "make": "make html && cp resume-src/* public"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -33,6 +41,7 @@
     ]
   },
   "devDependencies": {
-    "firebase-tools": "^7.9.0"
+    "firebase-tools": "^7.9.0",
+    "npm-watch": "^0.6.0"
   }
 }

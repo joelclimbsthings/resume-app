@@ -1,33 +1,60 @@
 import React from 'react';
 import './App.css';
 
-window.resizeIframe = obj => {
-   console.log('running');
-   obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
-};
-
 export default class App extends React.Component {
-   resizeIframe = obj => {
-      console.log('running');
-      obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+   state = {
+      view: 'html',
+      markdown: null,
+      markup: null
    };
 
+   async componentDidMount() {
+      const [ markdown, markup ] = await Promise.all([ fetch('resume.md'), fetch('resume.html') ]);
+
+      this.setState({
+         markdown: await markdown.text(),
+         markup: await markup.text()
+      });
+   }
+
+   renderHTML() {
+      const { markup } = this.state;
+
+      return markup ? (
+         <div
+            className="html-content"
+            dangerouslySetInnerHTML={{ __html: this.state.markup }}
+         ></div>
+      ) : null;
+   }
+
+   renderMarkdown() {
+      const { markdown } = this.state;
+      return markdown ? (
+         <div className="markdown-content">
+            <pre>{markdown}</pre>
+         </div>
+      ) : null;
+   }
+
    render() {
+      const resolver = {
+         html: this.renderHTML(),
+         markdown: this.renderMarkdown()
+      };
+
+      const content = resolver[this.state.view] || 'loading...';
+
       return (
          <div className="App">
             <header className="app-header">
-               <button>Markdown</button>
-               <button>HTML</button>
-               <button>PDF</button>
+               <button onClick={() => this.setState({ view: 'markdown' })}>Markdown</button>
+               <button onClick={() => this.setState({ view: 'html' })}>HTML</button>
+               <button onClick={() => window.open('https://assets.joelt.me/resume.pdf')}>
+                  PDF
+               </button>
             </header>
-
-            <iframe
-               title="HTML Resume"
-               frameBorder="0"
-               className="html-resume-view"
-               src="https://joelt-assets.firebaseapp.com/resume.html"
-               onLoad={event => this.resizeIframe(event.target)}
-            ></iframe>
+            {content}
          </div>
       );
    }
