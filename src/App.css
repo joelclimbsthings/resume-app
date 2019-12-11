@@ -9,7 +9,13 @@
 
 .markdown-content {
   padding-top: 20px;
-  overflow: hidden;
+  white-space: pre-wrap;
+  font-size: 0.9em;
+}
+
+.loader-content {
+  text-align: center;
+  margin-top: 15px;
 }
 
 @media print {

@@ -31,11 +31,7 @@ export default class App extends React.Component {
 
    renderMarkdown() {
       const { markdown } = this.state;
-      return markdown ? (
-         <div className="markdown-content">
-            <pre>{markdown}</pre>
-         </div>
-      ) : null;
+      return markdown ? <div className="markdown-content">{markdown}</div> : null;
    }
 
    render() {
@@ -44,7 +40,7 @@ export default class App extends React.Component {
          markdown: this.renderMarkdown()
       };
 
-      const content = resolver[this.state.view] || 'loading...';
+      const content = resolver[this.state.view] || <p className="loader-content">loading...</p>;
 
       return (
          <div className="App">

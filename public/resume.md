@@ -1,7 +1,7 @@
 # Joel Thiessen
 -----------------------------            -----------------------------------------
-Portland, OR, USA                             [https://joelt.me](https://joelt.me)
-(541) 261-9854                                                <dygerati@gmail.com>
+Portland, OR, USA                                     [https://joelt.me](https://joelt.me)
+(541) 261-9854                                                        <dygerati@gmail.com>
 -----------------------------            -----------------------------------------
 
 ## Education
@@ -72,7 +72,5 @@ Automated Andrew Yang
     **Leveraged Technologies:** React Native, React, JS, Firebase, Realtime DB
 
 ---
-
-
 
 **Skills:** (ninja): JavaScript, Node.js, React, React Native, Firebase, Git, Linux, HTML5/CSS (proficient): Docker, Elastic, AWS, GCP, Sass (familiar): Java, Python, C++, FastAI
