@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button, ButtonGroup } from 'reactstrap';
 import './App.css';
 import './resume.scss';
 
@@ -35,19 +36,35 @@ export default class App extends React.Component {
    }
 
    render() {
+      const { view } = this.state;
+
       const resolver = {
          html: this.renderHTML(),
          markdown: this.renderMarkdown()
       };
 
-      const content = resolver[this.state.view] || <p className="loader-content">loading...</p>;
+      const content = resolver[view] || <p className="loader-content">loading...</p>;
 
       return (
          <div className="App">
             <header className="app-header">
-               <button onClick={() => this.setState({ view: 'markdown' })}>Markdown</button>
-               <button onClick={() => this.setState({ view: 'html' })}>HTML</button>
-               <button onClick={() => window.open('resume.pdf')}>PDF</button>
+               <ButtonGroup size="sm" className="actions">
+                  <Button
+                     outline={view === 'markdown' ? false : true}
+                     onClick={() => this.setState({ view: 'markdown' })}
+                  >
+                     Markdown
+                  </Button>
+                  <Button
+                     outline={view === 'html' ? false : true}
+                     onClick={() => this.setState({ view: 'html' })}
+                  >
+                     HTML
+                  </Button>
+                  <Button outline onClick={() => window.open('resume.pdf')}>
+                     PDF
+                  </Button>
+               </ButtonGroup>
             </header>
             {content}
          </div>

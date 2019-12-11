@@ -3,14 +3,15 @@
 }
 
 .App {
-  width: 960px;
+  max-width: 960px;
   margin: 0 auto;
 }
 
 .markdown-content {
-  padding-top: 20px;
+  padding-top: 30px;
   white-space: pre-wrap;
   font-size: 0.9em;
+  font-weight: 400;
 }
 
 .loader-content {
@@ -18,7 +19,14 @@
   margin-top: 15px;
 }
 
+.actions {
+  margin: 5px auto;
+}
+
 @media print {
+  body {
+    width: 960px;
+  }
   .app-header {
     display: none;
   }
