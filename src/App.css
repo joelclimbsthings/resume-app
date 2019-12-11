@@ -8,7 +8,7 @@
 }
 
 .markdown-content {
-  padding-top: 30px;
+  padding: 30px 1.5em 0;
   white-space: pre-wrap;
   font-size: 0.9em;
   font-weight: 400;
