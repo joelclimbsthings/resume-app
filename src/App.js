@@ -53,7 +53,7 @@ export default class App extends React.Component {
    }
 
    render() {
-      const { view } = this.state;
+      const { view, dark } = this.state;
 
       const resolver = {
          html: this.renderHTML(),
@@ -78,7 +78,10 @@ export default class App extends React.Component {
                   >
                      HTML
                   </Button>
-                  <Button outline onClick={() => window.open('resume.pdf')}>
+                  <Button
+                     outline
+                     onClick={() => window.open(dark ? 'resume_dark.pdf' : 'resume.pdf')}
+                  >
                      PDF
                   </Button>
                </ButtonGroup>
@@ -87,7 +90,7 @@ export default class App extends React.Component {
                   id="darkModeSwitch"
                   name="darkModeSwitch"
                   label="Dark Mode"
-                  defaultChecked={this.state.dark}
+                  defaultChecked={dark}
                   onChange={e => this.setBodyClass(e.target.checked)}
                />
             </nav>

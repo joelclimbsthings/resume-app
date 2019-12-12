@@ -29,7 +29,7 @@ Portland, OR, USA                                     [https://joelt.me](https:/
 
 - Implemented continuous deployment with robust automated testing utilizing Jest + CircleCI.
 
-- Deployed small 3-node ELK stack using Docker for advanced analytics, data analysis, dashboarding & testing.
+- Deployed & managed a small 3-node ELK stack using Docker for advanced analytics, data analysis, dashboarding & testing.
 
 **Leveraged Technologies:** Node.js, React, Mobx, Google Cloud, Firebase + Firestore, Git, CircleCI, Docker, Elastic
 
