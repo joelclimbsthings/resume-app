@@ -91,7 +91,7 @@ export default class App extends React.Component {
                   name="darkModeSwitch"
                   label="Dark Mode"
                   defaultChecked={dark}
-                  onChange={e => this.setBodyClass(e.target.checked)}
+                  onChange={() => this.toggleDarkMode()}
                />
             </nav>
             {content}
