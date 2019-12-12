@@ -47,9 +47,13 @@
   /* h1:hover {
 background-color: #757575; color: #ffffff; text-shadow: 1px 1px 1px #333; } */
 
+  #work-experience ul {
+    margin-bottom: 0.5rem;
+  }
+
   #work-experience ul + p {
     font-size: 0.95em;
-    margin-bottom: 3px;
+    margin-bottom: 15px;
   }
 
   /* Paragraphs */
@@ -140,7 +144,8 @@ h2:hover { background-color: #397249; color: #ffffff; text-shadow: 1px 1px 1px
 
   /* Print styles */
   @media print {
-    margin: 10px 25px 10px;
+    margin: 1em 2em;
+    font-size: 1.1em;
 
     h2 {
       margin: 4px auto 5px;
@@ -168,16 +173,17 @@ h2:hover { background-color: #397249; color: #ffffff; text-shadow: 1px 1px 1px
 
     #joel-thiessen > h1 {
       margin: 0 auto 0;
-      font-size: 2em;
+      // font-size: 2em;
     }
 
     #joel-thiessen > p {
-      font-size: 0.9em;
+      // font-size: 0.9em;
       margin-bottom: 3px;
     }
 
     #work-experience > blockquote {
       margin: 5px auto 5px;
+      border: 0;
     }
 
     hr {

@@ -24,10 +24,11 @@
 }
 
 @media print {
-  body {
-    width: 960px;
+  .App {
+    max-width: 100%;
   }
-  .app-header {
+
+  .app-nav {
     display: none;
   }
 }
