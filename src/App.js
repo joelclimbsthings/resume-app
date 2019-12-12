@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, ButtonGroup } from 'reactstrap';
+import { Button, ButtonGroup, CustomInput } from 'reactstrap';
 import './App.css';
 import './resume.scss';
 
@@ -7,10 +7,16 @@ export default class App extends React.Component {
    state = {
       view: 'html',
       markdown: null,
-      markup: null
+      markup: null,
+      dark: true
    };
 
    async componentDidMount() {
+      this.setBodyClass(this.state.dark);
+      await this.fetchSources();
+   }
+
+   async fetchSources() {
       const [ markdown, markup ] = await Promise.all([ fetch('resume.md'), fetch('resume.html') ]);
 
       this.setState({
@@ -33,6 +39,17 @@ export default class App extends React.Component {
    renderMarkdown() {
       const { markdown } = this.state;
       return markdown ? <div className="markdown-content">{markdown}</div> : null;
+   }
+
+   setBodyClass(mode) {
+      document.body.classList[mode ? 'add' : 'remove']('dark-mode');
+   }
+
+   toggleDarkMode() {
+      this.setBodyClass(!this.state.dark);
+      this.setState({
+         dark: !this.state.dark
+      });
    }
 
    render() {
@@ -65,6 +82,14 @@ export default class App extends React.Component {
                      PDF
                   </Button>
                </ButtonGroup>
+               <CustomInput
+                  type="switch"
+                  id="darkModeSwitch"
+                  name="darkModeSwitch"
+                  label="Dark Mode"
+                  defaultChecked={this.state.dark}
+                  onChange={e => this.setBodyClass(e.target.checked)}
+               />
             </nav>
             {content}
          </div>

@@ -1,5 +1,49 @@
 @import url("https://fonts.googleapis.com/css?family=Signika:bold|Nunito|Muli:900&amp;ver=1.0.0");
 
+.dark-mode {
+  .app-nav {
+    button {
+      background-color: transparent;
+      font-weight: 600;
+      border-color: #eee;
+    }
+
+    .btn-outline-secondary {
+      background-color: transparent;
+      color: #ccc;
+      font-weight: normal;
+    }
+
+    .custom-control-input:checked ~ .custom-control-label::before {
+      background-color: #837da1;
+    }
+  }
+
+  .html-content {
+    h1 {
+      color: #fff;
+    }
+
+    h2 {
+      color: #eee;
+    }
+
+    a {
+      color: #c1b9ed;
+    }
+
+    a:hover,
+    a:active {
+      background-color: #c1b9ed;
+      color: #ffffff;
+    }
+
+    h2:before {
+      background-color: #837da1;
+    }
+  }
+}
+
 .html-content {
   padding: 10px 10px 10px 10px;
 

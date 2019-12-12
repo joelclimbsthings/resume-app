@@ -21,7 +21,7 @@ Portland, OR, USA                                     [https://joelt.me](https:/
 
 : **PostPerk** - _Technical Cofounder_
 
-- Fully designed & developed Node+React based product, dashboard, testing & all related tooling for full automation of partnership product for small-medium sized eCommerce companies.
+- Fully designed & developed Node+React+Firebase product, dashboard, testing & all related tooling for full automation of partnership platform for small-medium sized eCommerce companies.
 
 - Constructed recommendation engine to customize offers based on key demographics & characteristics for all brand -> brand partnerships.
 

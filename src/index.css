@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: "Nunito", Helvetica, Arial, sans-serif;
+  transition: background-color 150ms linear;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -8,4 +9,9 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+body.dark-mode {
+  color: white;
+  background-color: #454255;
 }
