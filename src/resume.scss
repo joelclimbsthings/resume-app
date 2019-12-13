@@ -128,6 +128,7 @@ background-color: #757575; color: #ffffff; text-shadow: 1px 1px 1px #333; } */
 
   /* There is a bar just before each category */
   h2:before {
+    transition: background-color 150ms linear;
     content: "";
     display: inline-block;
     margin-right: 1%;

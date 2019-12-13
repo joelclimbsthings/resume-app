@@ -66,7 +66,7 @@ Portland, OR, USA                                     [https://joelt.me](https:/
 ## Projects
 
 Indiegamer VR
-: Created [a mobile app](https://play.google.com/store/apps/details?id=com.jdd.indiegamer) for fun using just emerging technologies, supporting and launching simultaneously on iPhone and Android devices. Included community features, real-time gaming data, push notifications, time zone sync, Steam Login and QR Code scanning to promote a gaming session.
+: Created [a mobile app](https://play.google.com/store/apps/details?id=com.jdd.indiegamer) for fun using just emerging technologies, supporting and launching simultaneously on iPhone and Android devices. Includes community features, real-time gaming data, push notifications, time zone sync, Steam Login and QR Code scanning to promote a gaming session.
 
     **Leveraged Technologies:** React Native, JS, Redux, GraphQL, Node.js
 
