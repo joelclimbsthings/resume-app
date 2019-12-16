@@ -25,7 +25,8 @@
     "eject": "react-scripts eject",
     "deploy": "yarn build && firebase deploy",
     "watch": "npm-watch",
-    "make": "make html && cp resume-src/* public"
+    "make": "make html && cp resume-src/* public",
+    "firebase-login": "firebase logout && firebase login"
   },
   "eslintConfig": {
     "extends": "react-app"
