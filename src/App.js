@@ -80,7 +80,7 @@ export default class App extends React.Component {
                   </Button>
                   <Button
                      outline
-                     onClick={() => window.open(dark ? 'resume_dark.pdf' : 'resume.pdf')}
+                     onClick={() => window.open(dark ? 'Joel_Thiessen_Resume_dark.pdf' : 'Joel_Thiessen_Resume.pdf')}
                   >
                      PDF
                   </Button>
