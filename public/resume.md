@@ -77,4 +77,4 @@ Automated Andrew Yang
 
 ---
 
-**Skills:** (ninja): JavaScript, Node.js, React, React Native, Firebase, Firestore, Git, Linux, HTML5/Sass (proficient): Docker, Elastic, AWS, GCP, GraphQL, MySQL, D3 (familiar): Java, Python, C++, FastAI
+**Skills:** (ninja): JavaScript, Node.js, React, React Native, Firebase, Firestore, Git, Linux, HTML5/Sass, Jest (proficient): Docker, Elastic, AWS, Mocha/Chai, GCP, GraphQL, MySQL, D3, Photoshop (familiar): Java, Python, C++, FastAI
