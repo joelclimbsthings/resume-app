@@ -31,7 +31,7 @@ Portland, OR, USA                                     [https://joelt.me](https:/
 
 - Deployed & managed a small 3-node ELK stack using Docker for advanced analytics, data analysis, dashboarding & testing.
 
-**Leveraged Technologies:** Node.js, React, Mobx, Google Cloud, Firebase + Firestore, Git, CircleCI, Docker, Elastic
+**Leveraged Technologies:** Node.js, React, Mobx, Google Cloud, Firebase + Firestore, Git, CircleCI, Docker, Elastic, Webpack
 
 2014 - 2016
 
@@ -49,7 +49,7 @@ Portland, OR, USA                                     [https://joelt.me](https:/
 
 - Utilized Elastic Search stack with Kibana to create on-demand dashboarding reflecting data gathered via pipeline.
 
-**Leveraged Technologies:** Node.js, JS, AWS Lambda, Git, API Gateway, React, Jenkins, Docker, Elastic, D3
+**Leveraged Technologies:** Node.js, JS, AWS Lambda, Git, API Gateway, React, Jenkins, Docker, Elastic, D3, Webpack
 
 2012 - 2014
 
@@ -77,4 +77,4 @@ Automated Andrew Yang
 
 ---
 
-**Skills:** (ninja): JavaScript, Node.js, React, React Native, Firebase, Firestore, Git, Linux, HTML5/Sass, Jest (proficient): Docker, Elastic, AWS, Mocha/Chai, GCP, GraphQL, MySQL, D3, Photoshop (familiar): Java, Python, C++, FastAI
+**Skills:** (ninja): JavaScript, Node.js, React, React Native, Firebase, Firestore, Git, Linux, HTML5/Sass, Jest (proficient): Webpack, Docker, Elastic, AWS, Mocha/Chai, GCP, GraphQL, MySQL, D3, Photoshop (familiar): Java, Python, C++, FastAI
